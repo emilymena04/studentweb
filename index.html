@@ -1,0 +1,445 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Nokia | Emily Mena, 2025</title>
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #DCDCDC;
+}
+#wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    display: block;
+    background-color: #d2d1cc;
+}
+section {
+    height: 1024px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.logo {
+    font-family: "Avenir Heavy", sans-serif;
+    font-size: 32px;
+    color: #124191;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0px;
+}
+nav {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li a {
+    padding: 16px 32px;
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #124191;
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #ccc;
+    color: #072457;
+}
+
+.headline {
+    font-size: 24px;
+    color: #124191;
+    text-align: center;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+    background-image: url(nokia33102.png);
+}
+
+.phone {
+    position: absolute;
+    width: 200px;
+}
+
+.left {
+    left: 12%;
+    top: 30%;
+    transform: rotate(-10deg);
+    width: 608px;
+    height: 314px;
+}
+
+.right {
+    right: 12%;
+    top: 30%;
+    transform: rotate(225deg);
+    width: 608px;
+    height: 314px;
+}
+
+.tagline {
+    font-size: 20px;
+    font-family: "Avenir Medium", sans-serif;
+    color: #124191;
+    text-align: center;
+    position: absolute;
+    bottom: 19%;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+#products .products-container {
+    position: relative;
+    text-align: center;
+}
+
+.headline-text h2 {
+    font-size: 24px;
+    color: #124191;
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+    position: absolute;
+    left: 19%;
+    transform: translateX(-50%);
+    bottom: -280px;
+}
+
+.products-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    left: 63%;
+    transform: translateX(-50%);
+    bottom: -441px;
+}
+
+.product-img {
+    width: 381px;
+    height: 214px;
+    position: absolute;
+    top: 151px;
+    left: 172px;
+}
+.product-img1 {
+    width: 348px;
+    bottom: 9px;
+    position: relative;
+    left: -189px;
+}
+
+.buy-now {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: -709px;
+    left: 670px;
+}
+
+.buy-now a {
+    display: inline-block;
+    background-color: #124191;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-now a:hover {
+    background-color: #072457;
+}
+
+#accessories .headline-text {
+    position: absolute;
+    top: 9%;
+    right: 14%;
+    font-size: 24px;
+    color: #124191;
+    text-align: left;
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+    line-height: 1.2;
+}
+
+#accessories .learn-more {
+    position: absolute;
+    bottom: 16%;
+    right: 47%;
+}
+
+#accessories .learn-more a {
+    display: inline-block;
+    background-color: #124191;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#accessories .learn-more a:hover {
+    background-color: #072457;
+}
+
+#accessories .placeholder-img {
+    position: absolute;
+    top: 32%;
+    left: 47%;
+    transform: translateX(-50%);
+    width: 831px;
+    height: auto;
+}
+
+#accessories .placeholder-img .image-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #f0f0f0; 
+    z-index: -1; 
+}
+
+#accessories .placeholder-img img {
+    width: 100%; 
+    height: auto; 
+}
+
+#software .headline-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #124191;
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+}
+
+#software .bottom-left-img {
+    position: absolute;
+    left: 20%;
+    bottom: 31%;
+    transform: rotate(-10deg);
+    width: 199px;
+}
+
+#software .top-right-img {
+    position: absolute;
+    right: 26%;
+    top: 35%;
+    transform: rotate(10deg);
+    width: 208px;
+}
+
+#software .learn-more {
+    position: absolute;
+    bottom: 23%;
+    right: 36%;
+}
+
+#software .learn-more a {
+    display: inline-block;
+    background-color: #124191;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Avenir Medium", "Avenir Heavy", "Avenir Light";
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#software .learn-more a:hover {
+    background-color: #072457;
+}
+.support-headline h2 {
+    position: absolute;
+    bottom: 632px;
+    left: 177px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-family: "Avenir Heavy", "Avenir Medium", "Avenir Light";
+    border-radius: 6px;
+    font-size: 25px;
+    background-color: #2C59A5;
+}
+.support-headline h3 {
+    position: absolute;
+    left: 177px;
+    bottom: 601px;
+    color: #FFFFFF;
+    font-family: "Avenir Heavy", "Avenir Medium", "Avenir Light";
+    border-radius: 6px;
+    background-color: #2C59A5;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.contact-button {
+    color: rgba(255,255,255,1.00);
+    font-family: "Avenir Heavy", "Avenir Medium", "Avenir Light";
+    position: absolute;
+    bottom: 322px;
+    right: 358px;
+}
+.contact-button a {
+    border-radius: 5px;
+    background-color: #124191;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.contact-button a:hover {
+    background-color: #072457;
+}
+.support-placeholder img {
+    position: absolute;
+    left: 280px;
+    bottom: 258px;
+    -webkit-box-shadow: 0px 0px #f0f0f0;
+    box-shadow: 0px 0px #f0f0f0;
+}
+footer {
+    color: #000000;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <section id="home">
+    <h1 class="logo">Nokia</h1>
+    <h2 class="headline">the new 3310..</h2>
+
+    <img src="nokia33102.png" alt="Nokia Left" class="phone left">
+    <img src="nokia33101.png" alt="Nokia Right" class="phone right">
+
+    <h3 class="tagline">Connecting People..</h3>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="products">
+    <h1 class="logo">Nokia</h1>
+    <div class="products-container">
+      <div class="headline-text">
+        <h2>Make it Truly Yours..</h2>
+      </div>
+      <div class="products-images">
+        <img src="nokiasides1.png" alt="Nokia Phone 1" class="product-img1">
+        <img src="nokiasides2.png" alt="Nokia Phone 2" class="product-img">
+      </div>
+      <div class="buy-now">
+        <a>Buy Now</a>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </section>
+
+<section id="accessories">
+  <h1 class="logo">Nokia</h1>
+  <div class="headline-text">
+    <h2>Connect<br>
+      With Style &amp; Customize</h2>
+  </div>
+  <div class="placeholder-img">
+    <div class="image-box"></div> 
+    <img src="accessories.png" alt="Accessory Image">
+  </div>
+  <div class="learn-more">
+    <a>Learn More</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#accessories">Accessories</a></li>
+      <li><a href="#software">Software</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </nav>
+</section>
+
+  <section id="software">
+    <h1 class="logo">Nokia</h1>
+    <div class="headline-text">
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <h2>Play on the Go...</h2>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="placeholder-img">
+      <div class="image-box"></div> 
+      <img src="game1.png" alt="Software Image 1" class="bottom-left-img">
+      <img src="msgim.webp" alt="Software Image 2" class="top-right-img">
+    </div>
+    <div class="learn-more">
+      <a>Learn More</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </section>
+  
+<section id="support">
+    <h1 class="logo">Nokia</h1>
+    <div class="support-placeholder">
+        <div class="image-box"></div>
+        <img src="call center.jpg" alt="Support Placeholder Image">
+    </div>
+    <div class="support-headline">
+        <h2>Having Issues?</h2>
+        <h3>We Can Help You</h3>
+    </div>
+    <div class="contact-button">
+        <a>Contact</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#software">Software</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+</section>
+
+<footer><p>© 2025, Emily Mena. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</div>
+</body>
+</html>
